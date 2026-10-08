@@ -1,0 +1,33 @@
+name: grammar
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch=2.13
+  - transformers=5.19
+  - librosa=0.11
+  - pysoundfile=0.14
+  - spacy=3.8
+  - scikit-learn=1.9
+  - lightgbm=4.7
+  - shap=0.51
+  - pandas=3.0
+  - numpy=2.4
+  - scipy=1.17
+  - matplotlib=3.11
+  - seaborn=0.13
+  - pyarrow
+  - sentencepiece=0.2
+  - openjdk=17          # LanguageTool needs Java 17+
+  - jupyterlab
+  - ipykernel
+  - tqdm
+  - pip
+  - pip:
+      - faster-whisper==1.2.1
+      - mlx-whisper==0.4.3; sys_platform == "darwin"
+      - silero-vad==6.2.3
+      - language-tool-python==3.4.0
+      - sentence-transformers==6.1.0
+      - kaggle==2.2.4
+# after creating the env: python -m spacy download en_core_web_sm

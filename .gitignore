@@ -1,0 +1,10 @@
+# competition data: download from Kaggle (see README)
+Dataset_Final/
+
+# iteration material; only the experiment log is published
+development/*
+!development/EXPERIMENTS.md
+
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
